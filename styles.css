@@ -1,0 +1,85 @@
+body {
+  height: 100vh;
+  margin: 0;
+	background-image: url("images/bg.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+}
+.header {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header p {
+  font-size: 60px;
+  background-image: linear-gradient(#D6BCB1, #AB8574, #784E3D);
+  background-clip: text; 
+  color: transparent;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.main {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scoreboard {
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  align-items: center;
+  width: 50%;
+  background-color: rgb(153, 121, 80);
+  border: 3px solid rgb(43, 23, 0);
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.game-container {
+  height: 90%;
+  width: 50%;
+  background: linear-gradient(rgba(124, 71, 0), rgba(121, 92, 50), rgba(124, 71, 0));
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  border: 10px solid rgb(43, 23, 0);
+  border-radius: 10px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  padding-left: 25px;
+}
+.item {
+  display: flex;
+  width: 150px !important;
+  height: 100px !important;
+  justify-content: center;
+  align-items: center;
+  background: rgb(153, 121, 80);
+  color: white;
+  font-size: 70px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid rgb(43, 23, 0);
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  max-height: 100%; 
+  object-fit: cover;
+}
+p {
+  font-size: 20px;
+  color: black;
+}
+.moves {
+  color: white;
+  font-size: 25px;
+
+}
+.correct {
+  color: white;
+  font-size: 25px;
+}
